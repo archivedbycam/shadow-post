@@ -13,11 +13,11 @@ export default function Component() {
         {/* Logo/Icon */}
         <div className="mb-4">
           <Image
-            src="/images/shadowpost_logo_final.png"
+            src="/images/shadowpost_sphere.png"
             alt="ShadowPost Logo"
             width={454}
             height={454}
-            className="w-[227px] h-[227px] opacity-60"
+            className="w-[227px] h-[227px]"
             priority
           />
         </div>
