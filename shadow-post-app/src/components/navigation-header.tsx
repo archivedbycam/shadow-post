@@ -36,12 +36,16 @@ export default function Component() {
 
         {/* Auth Buttons */}
         <div className="flex items-center space-x-3 z-10">
-          <Button variant="ghost" className="text-[#000000] hover:bg-[#dedede] font-medium">
-            Sign In
-          </Button>
-          <Button className="bg-[#000000] text-[#ffffff] hover:bg-[#121212] rounded-full px-6 font-medium">
-            Sign Up
-          </Button>
+          <Link href="/signin">
+            <Button variant="ghost" className="text-[#000000] hover:bg-[#dedede] font-medium cursor-pointer">
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/signup">
+            <Button className="bg-[#000000] text-[#ffffff] hover:opacity-80 rounded-full px-6 font-medium cursor-pointer">
+              Sign Up
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
