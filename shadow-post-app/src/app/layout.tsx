@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import NavigationHeader from "@/components/navigation-header";
+import ConditionalNavigationHeader from "@/components/conditional-navigation-header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "ShadowPost",
   description: "Your shadow posting platform",
+  icons: {
+    icon: "/favicon-32.png",
+  },
 };
 
 export default function RootLayout({
@@ -21,10 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
-        <NavigationHeader />
+      <body className={`${inter.variable} antialiased`}>
+        <ConditionalNavigationHeader />
         {children}
         <Toaster />
       </body>

@@ -9,7 +9,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-[#ffffff] flex flex-col">
       {/* Main content area */}
-      <div className="flex-1 flex flex-col items-center justify-center px-4 py-16">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 py-6">
         {/* Logo/Icon */}
         <div className="mb-4">
           <Image
@@ -55,8 +55,7 @@ export default function Component() {
         </div>
       </div>
 
-      {/* Bottom gray section */}
-      <div className="h-64 bg-[#dedede] w-full"></div>
+      {/* <div className="h-64 bg-[#dedede] w-full"></div> */}
     </div>
   )
 }

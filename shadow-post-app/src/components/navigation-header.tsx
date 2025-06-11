@@ -38,7 +38,7 @@ export default function Component() {
         <div className="flex items-center space-x-3 z-10">
           <Link href="/signin">
             <Button variant="ghost" className="text-[#000000] hover:bg-[#dedede] font-medium cursor-pointer">
-              Sign In
+              Log In
             </Button>
           </Link>
           <Link href="/signup">
