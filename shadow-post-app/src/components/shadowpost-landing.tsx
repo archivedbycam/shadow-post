@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Inter } from "next/font/google"
 import Image from "next/image"
+import LandingHeroSection from "@/components/landing-hero-section"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -45,17 +46,18 @@ export default function Component() {
 
         {/* Footer links */}
         <div className="flex text-[#8f8b8b]">
-          <Link href="#" className="underline hover:text-[#515151] transition-colors mr-2">
+          <Link href="#" className="underline hover:text-[#515151] transition-colors">
             Leave Feedback
           </Link>
-          <span> </span>
+            <span className="mx-1">| See </span>
           <Link href="#" className="underline hover:text-[#515151] transition-colors">
-            See FAQ
+            FAQ
           </Link>
         </div>
       </div>
 
-      {/* <div className="h-64 bg-[#dedede] w-full"></div> */}
+      {/* Hero section below the main content */}
+      <LandingHeroSection />
     </div>
   )
 }
