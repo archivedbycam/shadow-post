@@ -46,14 +46,17 @@ export default function Component() {
 
         {/* Footer links */}
         <div className="flex text-[#8f8b8b]">
-          <Link href="#" className="underline hover:text-[#515151] transition-colors">
+          <Link href="/feedback" className="underline hover:text-[#515151] transition-colors">
             Leave Feedback
           </Link>
             <span className="mx-1">| See </span>
-          <Link href="#" className="underline hover:text-[#515151] transition-colors">
+          <Link href="/faq" className="underline hover:text-[#515151] transition-colors">
             FAQ
           </Link>
         </div>
+
+        {/* Blank grey card below the footer links */}
+        <div className="w-full max-w-5xl h-80 bg-[#e5e5e5] rounded-lg mx-auto my-16" />
       </div>
 
       {/* Hero section below the main content */}

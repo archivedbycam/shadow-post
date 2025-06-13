@@ -32,6 +32,12 @@ export default function Component() {
           >
             Pricing
           </Link>
+          <Link
+            href="/faq"
+            className="px-4 py-2 text-[#515151] rounded-full text-sm font-medium transition-colors hover:bg-[#dedede]"
+          >
+            FAQ
+          </Link>
         </nav>
 
         {/* Auth Buttons */}
